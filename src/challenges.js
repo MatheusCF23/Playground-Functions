@@ -81,34 +81,23 @@ function decode() {
 function techList(arrayTech, name) {
   arrayTech.sort();
   const obejct = [
-    {
-      tech: arrayTech[0],
-      name: name,
-    },
-    {
-      tech: arrayTech[1],
-      name: name,
-    },
-    {
-      tech: arrayTech[2],
-      name: name,
-    },
-    {
-      tech: arrayTech[3],
-      name: name,
-    },
-    {
-      tech: arrayTech[4],
-      name: name,
-    },
+    {tech: arrayTech[0],
+      name: name,},
+    {tech: arrayTech[1],
+      name: name,},
+    {tech: arrayTech[2],
+      name: name,},
+    {tech: arrayTech[3],
+      name: name,},
+    {tech: arrayTech[4],
+      name: name,},
   ]
   if (arrayTech.length === 0) { return 'Vazio!'; 
-
 }
   return obejct;
 }
 
-techList([], 'Elias');
+techList([], 'Matheus');
 
 module.exports = {
   calcArea,
