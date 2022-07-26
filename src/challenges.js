@@ -52,9 +52,24 @@ function catAndMouse(mouse, cat1, cat2) {
 }
 
 // Desafio 8
-function fizzBuzz() {
-  // seu código aqui
+function fizzBuzz(numerosDivisiveis) {
+  let newArray = [];
+  for (let i = 0; i < numerosDivisiveis.length; i += 1) {
+    if (numerosDivisiveis[i] % 3 === 0 && numerosDivisiveis[i] % 5 === 0) {
+      newArray.push('fizzBuzz');
+    } else if (numerosDivisiveis[i] % 3 === 0) {
+      newArray.push('fizz');
+    } else if (numerosDivisiveis[i] % 5 === 0) {
+      newArray.push('buzz');
+    } else {
+      newArray.push('bug!');
+    }
+  }
+  return newArray;
 }
+fizzBuzz([2, 15, 7, 9, 45]);
+fizzBuzz([7, 9]);
+fizzBuzz([9, 25]);
 
 // Desafio 9
 function encode() {
