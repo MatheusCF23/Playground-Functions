@@ -1,7 +1,8 @@
 // Desafio 1
-function compareTrue() {
+function compareTrue(a, b) {
   // seu códodigo aqui
-  //iniciando projeto
+    return a && b;
+  
 }
 
 // Desafio 2
