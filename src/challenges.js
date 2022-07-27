@@ -70,27 +70,59 @@ fizzBuzz([7, 9]);
 fizzBuzz([9, 25]);
 
 // Desafio 9
-function encode() {
+function encode(str) {
   // seu código aqui
+  let vstr = str.split('');
+  let arr = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 0; i < arr.length; i += 1) {
+    for (let j = 0; j < vstr.length; j += 1) {
+      if (vstr[j] === arr[i]) {
+        vstr[j] = i + 1;
+      }
+    }
+  }
+
+  return vstr.join('');
 }
-function decode() {
+function decode(str) {
   // seu código aqui
+  let vstr = str.split('');
+  let arr = ['a', 'e', 'i', 'o', 'u'];
+  for (let i = 0; i < arr.length; i += 1) {
+    for (let j = 0; j < vstr.length; j += 1) {
+      if (vstr[j] == i + 1) {
+        vstr[j] = arr[i];
+      }
+    }
+  }
+
+  return vstr.join('');
 }
 
 // Desafio 10
 function techList(arrayTech, name) {
   arrayTech.sort();
   const obejct = [
-    {tech: arrayTech[0],
-      name: name,},
-    {tech: arrayTech[1],
-      name: name,},
-    {tech: arrayTech[2],
-      name: name,},
-    {tech: arrayTech[3],
-      name: name,},
-    {tech: arrayTech[4],
-      name: name,},
+    {
+      tech: arrayTech[0],
+      name: name,
+    },
+    {
+      tech: arrayTech[1],
+      name: name,
+    },
+    {
+      tech: arrayTech[2],
+      name: name,
+    },
+    {
+      tech: arrayTech[3],
+      name: name,
+    },
+    {
+      tech: arrayTech[4],
+      name: name,
+    },
   ]
   if (arrayTech.length === 0) { return 'Vazio!'; 
 }
