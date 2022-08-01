@@ -23,8 +23,14 @@ function generatePhoneNumber(arr) {
 
 }
 // Desafio 12
-function triangleCheck() {
-  // seu código aqui
+function triangleCheck(lineA, lineB, lineC) {
+  if(((lineA + lineB) < lineC) || ((lineC + lineB) < lineA) || ((lineC + lineA) < lineB)){
+    return false;
+  }
+  if((Math.abs(lineA - lineB) > lineC) || (Math.abs(lineC - lineB) > lineA) || (Math.abs(lineC - lineA) > lineB)){
+    return false;
+  }
+  return true;
 }
 
 // Desafio 13
