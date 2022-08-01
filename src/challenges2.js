@@ -1,5 +1,5 @@
+// Desafio 11
 function generatePhoneNumber(arr) {
-  // seu código aqui
   if(arr.length !== 11){
     return 'Array com tamanho incorreto.';
   }
@@ -22,34 +22,16 @@ function generatePhoneNumber(arr) {
   return ('('+ arr[0]+arr[1]+') '+arr[2]+arr[3]+arr[4]+arr[5]+arr[6]+'-'+arr[7]+arr[8]+arr[9]+arr[10]);
 
 }
-
 // Desafio 12
-function triangleCheck(lineA, lineB, lineC) {
+function triangleCheck() {
   // seu código aqui
-  if(((lineA + lineB) < lineC) || ((lineC + lineB) < lineA) || ((lineC + lineA) < lineB)){
-    return false;
-  }
-  if((Math.abs(lineA - lineB) > lineC) || (Math.abs(lineC - lineB) > lineA) || (Math.abs(lineC - lineA) > lineB)){
-    return false;
-  }
-  return true;
 }
 
 // Desafio 13
-function hydrate(str) {
+function hydrate() {
   // seu código aqui
-  let cont = 0;
-  let arr = str.match(/\d+/g);
-  for (let val of arr){
-    cont += parseInt(val);
-  }
-  if(cont > 1){
-    return (`${cont} copos de água`);
-  } else {
-    return (`${cont} copo de água`);
-  }
-  
 }
+
 module.exports = {
   generatePhoneNumber,
   hydrate,
