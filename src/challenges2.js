@@ -35,7 +35,19 @@ function triangleCheck(lineA, lineB, lineC) {
 
 // Desafio 13
 function hydrate() {
-  // seu código aqui
+  function hydrate(str) {
+    let cont = 0;
+    let arr = str.match(/\d+/g);
+    for (let val of arr){
+      cont += parseInt(val);
+    }
+    if(cont > 1){
+      return (`${cont} copos de água`);
+    } else {
+      return (`${cont} copo de água`);
+    }
+    
+  }
 }
 
 module.exports = {
