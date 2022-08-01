@@ -90,7 +90,7 @@ function decode(str) {
   let arr = ['a', 'e', 'i', 'o', 'u'];
   for (let i = 0; i < arr.length; i += 1) {
     for (let j = 0; j < vstr.length; j += 1) {
-      if (vstr[j] == i + 1) {
+      if (vstr[j] === i + 1) {
         vstr[j] = arr[i];
       }
     }
