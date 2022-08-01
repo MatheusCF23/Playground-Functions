@@ -34,20 +34,19 @@ function triangleCheck(lineA, lineB, lineC) {
 }
 
 // Desafio 13
-function hydrate() {
-  function hydrate(str) {
-    let cont = 0;
-    let arr = str.match(/\d+/g);
-    for (let val of arr){
-      cont += parseInt(val);
-    }
-    if(cont > 1){
-      return (`${cont} copos de água`);
-    } else {
-      return (`${cont} copo de água`);
-    }
-    
+function hydrate(str) {
+  // seu código aqui
+  let cont = 0;
+  let arr = str.match(/\d+/g);
+  for (let val of arr){
+    cont += parseInt(val);
   }
+  if(cont > 1){
+    return (`${cont} copos de água`);
+  } else {
+    return (`${cont} copo de água`);
+  }
+  
 }
 
 module.exports = {
