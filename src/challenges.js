@@ -90,7 +90,7 @@ function decode(str) {
   let arr = ['a', 'e', 'i', 'o', 'u'];
   for (let i = 0; i < arr.length; i += 1) {
     for (let j = 0; j < vstr.length; j += 1) {
-      if (vstr[j] == i + 1) {
+      if (vstr[j] === i + 1) {
         vstr[j] = arr[i];
       }
     }
@@ -103,29 +103,20 @@ function decode(str) {
 function techList(arrayTech, name) {
   arrayTech.sort();
   const obejct = [
-    {
-      tech: arrayTech[0],
-      name: name,
+    { tech: arrayTech[0], name,
     },
-    {
-      tech: arrayTech[1],
-      name: name,
+    { tech: arrayTech[1], name,
     },
-    {
-      tech: arrayTech[2],
-      name: name,
+    { tech: arrayTech[2], name,
     },
-    {
-      tech: arrayTech[3],
-      name: name,
+    { tech: arrayTech[3], name,
     },
-    {
-      tech: arrayTech[4],
-      name: name,
+    { tech: arrayTech[4], name,
     },
-  ]
-  if (arrayTech.length === 0) { return 'Vazio!'; 
-}
+  ];
+  if (arrayTech.length === 0) {
+    return 'Vazio!';
+  }
   return obejct;
 }
 
